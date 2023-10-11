@@ -1,31 +1,23 @@
 import random
 class rps:
     count=0
-
-    def __init__(self):
-        pass
-
-        
+    
     @classmethod
     def game(cls,user):
-        
+        user=user.lower()
         number=['rock','paper','scissor']
-        c_number=random.choice(['rock','paper','scissor'])
-        print(f'computer chose: {c_number}')
+        c_number=random.choice(number)
+        print(f'you choose : {user} ,computer chose: {c_number}')
 
-        if user==c_number:
-            print("No point!")
-        elif(number == 'rock' and c_number == 'scissor') or (number == 'rock' and c_number == 'rock') or (user == 'rock' and c_number == 'paper'):
+        if user == c_number:
+            print('its a tie')
+            
+        elif (user == 'rock' and c_number == 'scissor') or (user == 'scissor' and c_number == 'paper') or (user == 'paper' and c_number == 'rock'):
             cls.count +=1
-            print("You win")
-        elif(number == 'paper' and c_number == 'scissor') or (number == 'paper' and c_number == 'rock') or (user == 'paper' and c_number == 'paper'):
-            cls.count +=1
-            print("You win")
-        elif(number == 'scissor' and c_number == 'scissor') or (number == 'scissor' and c_number == 'rock') or (user == 'scissor' and c_number == 'paper'):
-            cls.count +=1
-            print("You win")
+            print("user win")
+            
         else:
-            print("I win")
+            print("computer win")
             
         print(f"so far your points: {cls.count}")
 
