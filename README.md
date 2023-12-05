@@ -1,4 +1,4 @@
-# Moblie_Brands
+# Mobile_Brands
 
 
 Mobile Shop Management System
