@@ -1,3 +1,4 @@
+
 ## Mobile Shop Management System
 This Python program simulates a mobile shop management system using a class-based approach. The program allows users to add mobile details, display various lists (brands, models, colors, prices), and perform searches based on user preferences.
 
